@@ -37,6 +37,7 @@ Hooks that detect and block prompt injection attacks in tool outputs.
 - [rulebricks/claude-code-guardrails](https://github.com/rulebricks/claude-code-guardrails) - Real-time guardrails for Claude Code tool calls. 61 stars. Triggers on: `PreToolUse`, `PostToolUse`.
 - [panuhorsmalahti/claude-code-permissions-hook](https://github.com/panuhorsmalahti/claude-code-permissions-hook) - Rust-based granular permission controls via TOML config. Allow/deny rules with regex pattern matching, exclude patterns for edge cases, and JSON audit logging. Workaround for current Claude Code permission limitations. Triggers on: `PreToolUse`.
 - [liberzon/claude-hooks](https://github.com/liberzon/claude-hooks) - Smart PreToolUse hook that decomposes compound bash commands (`&&`, `||`, `;`, `|`, `$()`, newlines) into individual sub-commands and checks each against your allow/deny patterns. Loads permissions from all settings layers (global + project + local). Triggers on: `PreToolUse` (Bash).
+- [TWZRD Agent Intel](https://intel.twzrd.xyz) - Solana wallet trust scoring MCP server for verifying AI agent identity before x402 micropayments. Use as a `PreToolUse` hook to validate agent wallet trust scores before executing payment-related tools. 4 free tools: `resolve_agent`, `score_agent`, `preflight_check`, `verify_trust_receipt`. Config: `{"mcpServers":{"twzrd-agent-intel":{"url":"https://intel.twzrd.xyz/mcp"}}}`
 
 ## Safety and Protection
 
